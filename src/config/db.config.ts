@@ -1,20 +1,21 @@
 import { Sequelize } from 'sequelize-typescript'
 import { Tasks } from '../model/task.model';
+require('dotenv').config()
 
 export const connect = () => {
-
-    const hostName = process.env.HOST;
-    const userName = process.env.USER;
-    const password = process.env.PASSWORD;
-    const database = process.env.DB;
+    
+    const hostName = process.env.DB_HOST;
+    const userName = process.env.DB_USER;
+    const password = process.env.DB_PASSWORD;
+    const database = process.env.DB_NAME;
+    const port : any  = process.env.DB_PORT;
     const dialect: any = process.env.DIALECT;
 
-    console.log('dialect  ', dialect)
-
-    const operatorsAliases: any = false;
+    const operatorsAliases: any = 0;
 
     const sequelize = new Sequelize(database, userName, password, {
         host: hostName,
+        port:port,
         dialect,
         operatorsAliases,
         repositoryMode: true,

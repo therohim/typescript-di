@@ -1,23 +1,25 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "This is a simple example NodeJS API project to demonstrate Swagger Documentation",
+        "description": "This is a simple project with typescript and dependency injection",
         "version": "1.0.0",
         "title": "Tasks API",
         "contact": {
-            "email": "abc@gmail.com"
+            "email": "nrohim893@gmail.com"
         },
         "license": {
             "name": "Apache 2.0",
             "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
         }
     },
-    "schemes": ["http"],
-    "host": "localhost:3081",
-    "basePath": "/api",
+    "schemes": ["http","https"],
+    "basePath": "/api/task/v0",
     "paths" : {
         "/tasks" : {
             "get" : {
+                "tags": [
+                    "Task"
+                ],
                 "summary" : "Get all the tasks",
                 "description": "Get all the tasks",
                 "produces": ["application/json"],

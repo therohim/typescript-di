@@ -1,2 +1,1 @@
-# nodejs-restapi-postgresql-ts
-Example Project on how to create nodejs REST API with PostgreSQL written in Typescript
+# Node JS with typescript, dependency injection and postgreSQL

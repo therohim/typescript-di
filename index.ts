@@ -1,8 +1,8 @@
 import * as http from "http";
-import App from "./app";
-import { APILogger } from "./logger/api.logger";
+import App from "./src/app";
+import { APILogger } from "./src/logger/api.logger";
 
-const port = process.env.PORT || 3070;
+const port = process.env.PORT || 5010;
 
 App.set("port", port);
 const server = http.createServer(App);
