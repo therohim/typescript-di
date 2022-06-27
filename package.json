@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-restapi-mongo-ts",
+  "name": "nodejs-restapi-postgre-ts",
   "version": "1.0.0",
-  "description": "Example Project on how to build and develop REST API with NodeJS and MongoDB",
+  "description": "Example Project on how to use dependency injection in typescript",
   "main": "index.js",
   "scripts": {
     "start": "ts-node index.ts",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bbachi/nodejs-restapi-mongo-ts.git"
+    "url": "git+https://github.com/nurrohim11/typescript-di.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bbachi/nodejs-restapi-mongo-ts/issues"
+    "url": "https://github.com/nurrohim11/typescript-di/issues"
   },
-  "homepage": "https://github.com/bbachi/nodejs-restapi-mongo-ts#readme",
+  "homepage": "https://github.com/nurrohim11/typescript-di#readme",
   "dependencies": {
     "express": "^4.17.1",
     "pg": "^8.7.3",
